@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmConnect - Farmer to Customer Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                🌾 FarmConnect
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#tracking">Tracking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero" id="home">
+            <h1>Farmer to Customer Marketplace</h1>
+            <p>
+                Connecting Farmers Directly with Customers.
+                No Middlemen. Better Prices. Fresh Produce.
+            </p>
+
+            <button>Explore Products</button>
+        </section>
+    </header>
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <h2>500+</h2>
+            <p>Registered Farmers</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>10,000+</h2>
+            <p>Customers</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>20+</h2>
+            <p>States Covered</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>50,000+</h2>
+            <p>Orders Delivered</p>
+        </div>
+
+    </section>
+
+    <!-- ================= FARMER REGISTRATION ================= -->
+
+    <section class="registration">
+
+        <h2>👨‍🌾 Farmer Registration</h2>
+
+        <form id="farmerForm">
+
+            <input type="text"
+                placeholder="Full Name"
+                required>
+
+            <input type="email"
+                placeholder="Email Address"
+                required>
+
+            <input type="tel"
+                placeholder="Mobile Number"
+                required>
+
+            <input type="text"
+                placeholder="Farm Location"
+                required>
+
+            <select>
+                <option>Select Crop Type</option>
+                <option>Tomato</option>
+                <option>Potato</option>
+                <option>Rice</option>
+                <option>Wheat</option>
+                <option>Vegetables</option>
+            </select>
+
+            <input type="password"
+                placeholder="Password"
+                required>
+
+            <button type="submit">
+                Register Now
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= CUSTOMER LOGIN ================= -->
+
+    <section class="login">
+
+        <h2>👤 Customer Login</h2>
+
+        <form id="loginForm">
+
+            <input type="email"
+                placeholder="Email">
+
+            <input type="password"
+                placeholder="Password">
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="products">
+
+        <h2>🛒 Fresh Products</h2>
+
+        <div class="products-container">
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1546470427-e5ac89cd0b04"
+                    alt="Tomatoes">
+
+                <h3>Organic Tomatoes</h3>
+
+                <p>Fresh Farm Produce</p>
+
+                <h4>₹40 / kg</h4>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655"
+                    alt="Potatoes">
+
+                <h3>Farm Potatoes</h3>
+
+                <p>Direct From Farmer</p>
+
+                <h4>₹30 / kg</h4>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b"
+                    alt="Wheat">
+
+                <h3>Premium Wheat</h3>
+
+                <p>Quality Assured</p>
+
+                <h4>₹55 / kg</h4>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section class="dashboard">
+
+        <h2>📊 Farmer Dashboard</h2>
+
+        <div class="dashboard-grid">
+
+            <div class="dashboard-card">
+                <h3>Orders</h3>
+                <p>125</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Earnings</h3>
+                <p>₹1,25,000</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Products</h3>
+                <p>35</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Customers</h3>
+                <p>210</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ORDER MANAGEMENT ================= -->
+
+    <section class="orders">
+
+        <h2>📦 Order Management</h2>
+
+        <div class="order-box">
+
+            <span>#ORD1023</span>
+
+            <span>Tomatoes (20kg)</span>
+
+            <span class="pending">Pending</span>
+
+        </div>
+
+        <div class="order-box">
+
+            <span>#ORD1024</span>
+
+            <span>Wheat (50kg)</span>
+
+            <span class="shipped">Shipped</span>
+
+        </div>
+
+        <div class="order-box">
+
+            <span>#ORD1025</span>
+
+            <span>Potatoes (30kg)</span>
+
+            <span class="delivered">Delivered</span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRICE COMPARISON ================= -->
+
+    <section id="prices">
+
+        <h2>📈 Live Market Price Comparison</h2>
+
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Market Price</th>
+                <th>Farmer Price</th>
+            </tr>
+
+            <tr>
+                <td>Tomato</td>
+                <td>₹60/kg</td>
+                <td>₹40/kg</td>
+            </tr>
+
+            <tr>
+                <td>Potato</td>
+                <td>₹45/kg</td>
+                <td>₹30/kg</td>
+            </tr>
+
+            <tr>
+                <td>Wheat</td>
+                <td>₹70/kg</td>
+                <td>₹55/kg</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- ================= WEATHER ================= -->
+
+    <section id="weather">
+
+        <h2>🌦 Weather Forecast</h2>
+
+        <div class="weather-container">
+
+            <div class="weather-card">
+                <h3>Temperature</h3>
+                <p id="temp">32°C</p>
+            </div>
+
+            <div class="weather-card">
+                <h3>Humidity</h3>
+                <p id="humidity">72%</p>
+            </div>
+
+            <div class="weather-card">
+                <h3>Wind Speed</h3>
+                <p id="wind">15 km/h</p>
+            </div>
+
+            <div class="weather-card">
+                <h3>Condition</h3>
+                <p id="condition">Sunny</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DELIVERY TRACKING ================= -->
+
+    <section id="tracking">
+
+        <h2>📍 Delivery Tracking</h2>
+
+        <div class="tracking-box">
+
+            <iframe
+                src="https://maps.google.com/maps?q=delhi&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="450"
+                style="border:0;">
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RATINGS ================= -->
+
+    <section class="ratings">
+
+        <h2>⭐ Top Rated Farmers</h2>
+
+        <div class="rating-container">
+
+            <div class="farmer-rating-card">
+                <h3>Ramesh Kumar</h3>
+                <p>Tomato Farmer</p>
+                <h4>⭐⭐⭐⭐⭐ 4.9/5</h4>
+            </div>
+
+            <div class="farmer-rating-card">
+                <h3>Suresh Patel</h3>
+                <p>Wheat Farmer</p>
+                <h4>⭐⭐⭐⭐⭐ 4.8/5</h4>
+            </div>
+
+            <div class="farmer-rating-card">
+                <h3>Priya Singh</h3>
+                <p>Vegetable Farmer</p>
+                <h4>⭐⭐⭐⭐⭐ 4.7/5</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= COMMUNITY ================= -->
+
+    <section id="community">
+
+        <h2>💬 Farmer Community Forum</h2>
+
+        <div class="community-container">
+
+            <div class="post">
+                <h3>Ramesh Kumar</h3>
+                <p>
+                    Anyone facing pest issues in tomato farming?
+                    Looking for organic solutions.
+                </p>
+
+                <button>👍 Like</button>
+                <button>💬 Comment</button>
+            </div>
+
+            <div class="post">
+                <h3>Priya Singh</h3>
+                <p>
+                    Best irrigation methods during summer season?
+                </p>
+
+                <button>👍 Like</button>
+                <button>💬 Comment</button>
+            </div>
+
+        </div>
+
+        <div class="post-box">
+
+            <textarea id="postInput"
+                placeholder="Share your farming experience...">
+            </textarea>
+
+            <button id="postBtn">
+                Create Post
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <h2>🚀 Additional Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                🤖 AI Disease Detection
+            </div>
+
+            <div class="feature-card">
+                💳 UPI Payments
+            </div>
+
+            <div class="feature-card">
+                📢 Government Schemes
+            </div>
+
+            <div class="feature-card">
+                📱 Live Notifications
+            </div>
+
+            <div class="feature-card">
+                🚚 Smart Logistics
+            </div>
+
+            <div class="feature-card">
+                📊 Analytics Dashboard
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2>📞 Contact Us</h2>
+
+        <form class="contact-form">
+
+            <input type="text"
+                placeholder="Your Name">
+
+            <input type="email"
+                placeholder="Email">
+
+            <textarea
+                placeholder="Your Message">
+            </textarea>
+
+            <button>
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>🌾 FarmConnect</h3>
+
+        <p>
+            Empowering Farmers Through Technology
+        </p>
+
+        <p>
+            © 2026 FarmConnect. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
